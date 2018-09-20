@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#header {
+	z-index: 999;
+}
+#content-inner {
+	padding-top: 50px !important;
+}
+
+#nextslide,
+#prevslide {
+	display: block !important;
+	z-index: 100;
+}
+
+#supersized li img{
+	/*top:0px!important*/
+}
+
+#thumb-tray {
+	display: block !important;
+	bottom: 0 !important;
+	position: absolute !important;
+	box-shadow: none;
+	height: auto;
+	padding: 12px 0;
+	border-top: 1px solid #BDBDBF;
+	border-bottom: 1px solid #BDBDBF;
+	background: url() !important;
+	background-color: rgba(255, 255, 255, .5) !important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99ffffff,EndColorStr=#99ffffff);
+	rgba(255, 255, 255, .5)
+}
+#thumb-tray:not(:target){ /* IE9以上で filter を無効にする */
+	filter: none;
+	-ms-filter: none;
+}
+
+#controls-wrapper {
+	display: none !important;
+}
+
+ul#thumb-list {
+	margin: 0;
+}
+ul#thumb-list li {
+	background-color: #fff !important;
+	width: 55px;
+	height: auto;
+	margin-right: 12px;
+}
+
+ul#thumb-list li img {
+	width: 55px;
+	height: 55px;
+	border: 1px solid #ccc;
+	opacity: 0.8;
+}
+
+#prevslide, #nextslide {
+	width: 52px;
+	height: 52px;
+}
+
+#prevslide:hover {
+	background: url(../img/back_on.png) no-repeat;
+}
+#nextslide:hover {
+	background: url(../img/forward_on.png) no-repeat;
+}

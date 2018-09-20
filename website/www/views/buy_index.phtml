@@ -1,0 +1,32 @@
+  <div class="mid mid2" style="height:1472px">
+    <div class="bottom">
+      <div class="locate wrap">
+        <span class="content"><?=$navi4?> > <?=$subnavi3?></span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="menu">
+        <div class="nav buy">
+          <div class="tit cur">
+            <a href="<?=$home?>buy"><?=$subnavi3?></a>
+          </div>
+        </div>
+        <div class="nav sell">
+          <div class="tit">
+            <a href="<?=$home?>sell"><?=$subnavi4?></a>
+          </div>
+        </div>
+      </div>
+      <div class="container3" style="border:0">
+        <?php if ($curLang === 'tc'): ?>
+            <?php echo $buy->content_tc; ?>
+          <?php else: ?>
+            <?php echo $buy->content_en; ?>
+          <?php endif; ?>
+      </div>
+    </div>
+
+
+  </div>
+<script src="<?php echo $resource_url; ?>js/buy.js" charset="utf-8"></script>

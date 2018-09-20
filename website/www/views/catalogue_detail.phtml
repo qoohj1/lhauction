@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="<?php echo $resource_url; ?>libs/fancybox/jquery.fancybox.css">
+<div class="mid3">
+  <div class="bottom">
+    <div class="locate wrap">
+      <span class="content"><?=$navi3?> ><a style="color:#eee" href="<?=$home?>catalogue?cid=<?php echo $catalogueDetail->clazz_id;?>">
+          <?php if(count($catalogueParent)>0):?>
+            <?php if ($curLang === 'tc'): ?>
+              <?php echo $catalogueParent->name_tc; ?>
+            <?php else: ?>
+              <?php echo $catalogueParent->name_en; ?>
+            <?php endif; ?>
+        <?php endif;?></a> > <a style="color:#eee" href="">
+          <?php if ($curLang === 'tc'): ?>
+            <?php echo $catalogueDetail->title_tc; ?>
+          <?php else: ?>
+            <?php echo $catalogueDetail->title_en; ?>
+        <?php endif; ?></a>
+      </span>
+      <div id="control" class="control">
+          <?php if ($firstLast['pre']): ?>
+              <span class="pre"><a style="color:#eee" href="<?=$home?>catalogue/detail?id=<?php echo $catalogueDetail->id-1;?>">< 上一個項目</a></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <?php endif; ?>
+          <?php if ($firstLast['next']): ?>
+              <span class="next"><a style="color:#eee" href="<?=$home?>catalogue/detail?id=<?php echo $catalogueDetail->id+1;?>">下一個項目 ></a></span>
+          <?php endif; ?>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="item">
+      <div class="pics">
+        <!-- Swiper -->
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <?php foreach ($catalogueDetail->pic as $v): ?>
+                <!-- <a class="fancybox" href="<?php echo $v?>"><div class="swiper-slide" style="background-image:url(<?php echo $v?>)"></div></a> -->
+                <a class="fancybox swiper-slide" style="background-image:url(<?php echo $v?>);background-size:contain;background-repeat:no-repeat" rel="group" href="<?php echo $v?>"></a>
+              <?php endforeach; ?>
+            </div>
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div> -->
+        </div>
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <?php foreach ($catalogueDetail->pic as $v): ?>
+                  <div class="swiper-slide" style="background-image:url(<?php echo $v?>);"></div>
+              <?php endforeach; ?>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+      </div>
+      <div class="detail">
+        <?php if ($curLang === 'tc'): ?>
+          <div class="name"><?php echo $catalogueDetail->title_tc?></div>
+          <div class="lot">LOT: <span class="no"><?php echo $catalogueDetail->num?></span></div>
+          <div class="estimated">
+            <?php if($catalogueDetail->prize_tc): ?>
+              成交價（含佣金）：HK$ <span class="money"><?php echo $catalogueDetail->prize_tc; ?></span>
+            <?php else: ?>
+              估計價格：HK$ <span class="money"><?php echo $catalogueDetail->prize_en; ?></span>
+            <?php endif; ?>
+          </div>
+          <div class="instruction">
+            <?php echo $catalogueDetail->descript_tc?>
+          </div>
+        <?php else:?>
+          <div class="name"><?php echo $catalogueDetail->title_en?></div>
+          <div class="lot">LOT: <span class="no"><?php echo $catalogueDetail->num?></span></div>
+          <div class="estimated">
+            <?php if($catalogueDetail->prize_tc): ?>
+              PRICE (included premium):HK$ <span class="money"><?php echo $catalogueDetail->prize_tc; ?></span>
+            <?php else: ?>
+              ESTIMATE PRICE：HK$ <span class="money"><?php echo $catalogueDetail->prize_en; ?></span>
+            <?php endif; ?>
+          </div>
+          <div class="instruction">
+            <?php echo $catalogueDetail->descript_en?>
+          </div>
+        <?php endif;?>
+      </div>
+    </div>
+    <div class="otheritem">
+        <div class="tit">其它相關場景</div>
+        <div class="red_line"></div>
+        <div class="pics">
+            <?php foreach ($otheritem as $k => $v): ?>
+                <?php if(strpos($v['pic'],',')): ?>
+                  <a href="<?=$home?>catalogue/detail?id=<?php echo $v['id']?>">
+                    <img style="width:200px;height:200px" src="<?php echo strstr($v['pic'], ',', TRUE) ?>" alt="">
+                  </a>
+                <?php else: ?>
+                  <a href="<?=$home?>catalogue/detail?id=<?php echo $v['id']?>">
+                    <img style="width:200px;height:200px" src="<?php echo $v['pic'] ?>" alt="">
+                  </a>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
+  </div>
+</div>
+<script src="<?php echo $resource_url; ?>js/swiper.min.js"></script>
+<script src="<?php echo $resource_url; ?>libs/fancybox/jquery.fancybox.js" charset="utf-8"></script>
+<script src="<?php echo $resource_url; ?>js/catalogue_detail.js" charset="utf-8"></script>

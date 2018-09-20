@@ -1,0 +1,131 @@
+  <div class="mid mid2" style="height:1700px">
+    <div class="bottom">
+      <div class="locate wrap">
+        <span class="content"><?=$navi6?> > <?=$subnavi8?></span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="menu">
+        <div class="nav about">
+          <div class="tit">
+            <a href="<?=$home?>about"><?=$subnavi7?></a>
+          </div>
+        </div>
+        <div class="nav contact">
+          <div class="tit cur">
+            <a href="<?=$home?>contact"><?=$subnavi8?></a>
+          </div>
+        </div>
+      </div>
+      <div class="container3" style="border:0">
+        <div id="map" style="width:665px; height:390px; border:1px solid #5C6672;"></div>
+        <?php if ($curLang === 'tc'): ?>
+            <?php echo $contact1->content_tc; ?>
+          <?php else: ?>
+            <?php echo $contact1->content_en; ?>
+        <?php endif; ?>
+        <?php if ($curLang === 'tc'): ?>
+          <div id="cataRequest">
+              <h4>如欲索取拍品圖錄，請填寫以下表格。我們會盡快與閣下聯絡並作進一步安排。</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="sr-only" for="name">姓名</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="sr-only" for="email">电子邮箱</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="sr-only" for="tel">联系电话</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone">
+                  </div>
+                </div>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox1" value="古董級普洱茶及佳茗專場"> 古董級普洱茶及佳茗專場
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox2" value="茶道·香道·花器專場"> 茶道·香道·花器專場
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox3" value="珍稀相機專場"> 珍稀相機專場
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox4" value="補品及佳釀專場"> 補品及佳釀專場
+                </label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <button type="submit" id="submit" class="btn btn-primary">傳送</button>
+                  </div>
+                </div>
+          </div>
+
+        <?php else: ?>
+          <div id="cataRequest">
+              <h4>Thank you for your interest in our Auction. If you would like to get our Auction Catalogue, please fill out the form below. We will contact you soon.</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="sr-only" for="name">name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="sr-only" for="email">email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="sr-only" for="tel">phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone">
+                  </div>
+                </div>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox1" value="Vintage Pu-er Tea Auction"> Vintage Pu-er Tea Auction
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox2" value="Tea Wares & Agarwood Auction"> Tea Wares & Agarwood Auction
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox3" value="Photographical Auction"> Photographical Auction
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="Checkbox4" value="Delicacies & Wine Auction"> Delicacies & Wine Auction
+                </label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <button id="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+          </div>
+
+        <?php endif; ?>
+
+      </div>
+    </div>
+
+
+  </div>
+  <script>
+    function initMap() {
+      var uluru = {lat: 22.294715099827147, lng: 114.16928887367249};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCalpFBYzyuaPac83svQNjQg-NqpoaOJfs&callback=initMap">
+  </script>
+  <script src="<?php echo $resource_url; ?>js/contact.js"></script>

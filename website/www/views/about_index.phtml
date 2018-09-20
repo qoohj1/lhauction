@@ -1,0 +1,40 @@
+  <div class="mid mid2" style="height:1472px">
+    <div class="bottom">
+      <div class="locate wrap">
+        <span class="content"><?=$navi6?> > <?=$subnavi7?></span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="menu">
+        <div class="nav about">
+          <div class="tit cur">
+            <a href="<?=$home?>about"><?=$subnavi7?></a>
+          </div>
+        </div>
+        <div class="nav contact">
+          <div class="tit">
+            <a href="<?=$home?>contact"><?=$subnavi8?></a>
+          </div>
+        </div>
+      </div>
+      <div class="container3" style="border:0">
+        <?php if ($curLang === 'tc'): ?>
+            <?php echo $about->content_tc; ?>
+          <?php else: ?>
+            <?php echo $about->content_en; ?>
+          <?php endif; ?>
+          <div class="about_pics">
+              <?php foreach ($about->pic as $v): ?>
+
+                <!-- <a class="fancybox" href="<?php echo $v?>"><div class="swiper-slide" style="background-image:url(<?php echo $v?>)"></div></a> -->
+                <!-- <a class="fancybox swiper-slide" style="background-image:url(<?php echo $v?>)" rel="group" href="<?php echo $v?>"></a> -->
+                <img style="width:190px;height:190px" src="<?=$v?>">
+              <?php endforeach; ?>
+
+          </div>
+      </div>
+    </div>
+
+
+  </div>

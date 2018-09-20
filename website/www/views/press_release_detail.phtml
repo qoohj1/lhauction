@@ -1,0 +1,185 @@
+<link rel="stylesheet" href="<?php echo $resource_url; ?>libs/fancybox/jquery.fancybox.css">
+<div class="mid">
+  <div class="bottom">
+    <div class="locate wrap">
+      <span class="content"><?=$navi5?> > <?=$subnavi5?></span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="menu <?=$curLang?>">
+      <div class="nav press_release">
+        <div class="tit">
+          <?=$subnavi5?>
+        </div>
+        <div class="sub-nav">
+            <?php if ($curLang === 'tc'): ?>
+              <?php foreach ($submenu as $sub): ?>
+                  <div class="sub-tit" data-id="<?=$sub['id']?>"><a href="<?=$home?>press_release?id=<?=$sub['id']?>"><?php echo $sub['name_tc']?></a></div>
+              <?php endforeach; ?>
+            <?php else: ?>
+              <?php foreach ($submenu as $sub): ?>
+                  <div class="sub-tit" data-id="<?=$sub['id']?>"><a href="<?=$home?>press_release?id=<?=$sub['id']?>"><?php echo $sub['name_en']?></a></div>
+              <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+      </div>
+      <div class="nav press_media">
+        <div class="tit">
+          <a href="<?=$home?>press_media">
+            <?=$subnavi6?>
+          </a>
+        </div>
+      </div>
+    </div>
+    <style media="screen">
+      .pressitem .top{width: 100%; height: 30px;margin-bottom: 30px}
+      .pressitem .top .date,.pressitem .top .pdf,.pressitem .top .return{line-height: 30px}
+      .pressitem .top .date,.pressitem .top .pdf{float: left}
+      .pressitem .top .date span{padding-right: 25px;border-right: 1px solid black}
+      .pressitem .top .pdf span{padding-left: 25px}
+      .pressitem .top .pdf span a{display: inline;color: #b8262b;}
+      .pressitem .top .return{float: right;}
+      .pressitem .top .return a{color: #b8262b;}
+      .pressitem .title{font-size: 18px;color: #b8262b;font-weight: bold;margin-bottom: 30px}
+      .pressitem .pics img{
+          float: left;
+          display: inline-block;
+          padding: 5px;
+          background: white;
+          margin: 7px 14px 7px 0;
+          width: 160px;
+      }
+      * { box-sizing: border-box; }
+
+      /* ---- grid ---- */
+
+      .grid {
+        background: #fff;
+      }
+
+      /* clear fix */
+      .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      /* ---- .grid-item ---- */
+
+      .grid-sizer,
+      .grid-item {
+        width: 30%;
+        padding: 5px;
+        background: white;
+        border: 1px solid #BBB;
+        margin: 7px 14px 7px 0;
+
+      }
+      .grid-sizer{
+          border: 0px;
+      }
+      .grid-item {
+        float: left;
+      }
+
+      .grid-item img {
+        display: block;
+        max-width: 100%;
+      }
+
+    </style>
+    <div class="container3 <?=$curLang?>">
+      <?php if ($curLang === 'tc'): ?>
+        <div class="pressitem">
+          <div class="top">
+            <div class="date"><span><?=date('Y-m-d', $pressDetail->create_time)?></span></div>
+            <?php if($pressDetail->pdf_tc): ?>
+            <div class="pdf"><span><a target="_blank" href="<?=$pressDetail->pdf_tc?>">PDF版本</a></span></div>
+            <?php endif;?>
+            <div class="return"><a href="<?=$_SERVER['HTTP_REFERER']?>">< 返回</a></div>
+          </div>
+          <div class="title">
+            <?=$pressDetail->title_tc?>
+          </div>
+          <div class="detail">
+            <?=$pressDetail->content_tc?>
+            <?php if($pressDetail->pic): ?>
+                <div class="pics">
+                    <?php foreach ($pressDetail->pic as $v): ?>
+                        <img src="<?php echo $v?>" alt="">
+                    <?php endforeach; ?>
+                </div>
+                <div class="grid">
+                  <div class="grid-sizer"></div>
+                    <?php foreach ($pressDetail->pic as $v): ?>
+                        <div class="grid-item">
+                            <a rel="group" href="<?php echo $v?>" class="fancybox">
+                            <img src="<?php echo $v?>" alt="">
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif;?>
+          </div>
+        </div>
+      <?php else:?>
+        <div class="pressitem">
+          <div class="top">
+            <div class="date"><span><?=date('Y-m-d', $pressDetail->create_time)?></span></div>
+            <?php if($pressDetail->pdf_en): ?>
+            <div class="pdf"><span><a target="_blank" href="<?=$pressDetail->pdf_en?>">PDF版本</a></span></div>
+            <?php endif;?>
+            <div class="return"><a href="<?=$_SERVER['HTTP_REFERER']?>">< 返回</a></div>
+          </div>
+          <div class="title">
+            <?=$pressDetail->title_en?>
+          </div>
+          <div class="detail">
+            <?=$pressDetail->content_en?>
+            <?php if($pressDetail->pic): ?>
+                <div class="pics">
+                    <?php foreach ($pressDetail->pic as $v): ?>
+                        <img src="<?php echo $v?>" alt="">
+                    <?php endforeach; ?>
+                </div>
+                <div class="grid">
+                  <div class="grid-sizer"></div>
+                    <?php foreach ($pressDetail->pic as $v): ?>
+                        <div class="grid-item">
+                            <a rel="group" href="<?php echo $v?>" class="fancybox">
+                            <img src="<?php echo $v?>" alt="">
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif;?>
+          </div>
+        </div>
+      <?php endif;?>
+    </div>
+  </div>
+</div>
+<script src="<?php echo $resource_url; ?>js/masonry.pkgd.min.js" charset="utf-8"></script>
+<script src="<?php echo $resource_url; ?>libs/fancybox/jquery.fancybox.js" charset="utf-8"></script>
+<script type="text/javascript">
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
+  horizontalOrder: false,
+
+});
+var clazz_id = <?=$pressDetail->clazz_id?>;
+  $('.sub-tit[data-id='+clazz_id+']').addClass('cur');
+
+// imagesLoaded( grid ).on( 'progress', function() {
+//   // layout Masonry after each image loads
+//   msnry.layout();
+// });
+$(".fancybox").fancybox();
+</script>

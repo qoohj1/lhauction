@@ -1,0 +1,257 @@
+<style media="screen">
+.header{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+</style>
+<link rel="stylesheet" href="<?php echo $resource_url; ?>libs/supersized/css/supersized.css">
+<link rel="stylesheet" href="<?php echo $resource_url; ?>libs/supersized/theme/supersized.shutter.css">
+<link rel="stylesheet" href="<?php echo $resource_url; ?>css/supersizedcustom.css">
+<div id="home-slider">
+    <a id="prevslide" class="load-item"></a>
+    <a id="nextslide" class="load-item"></a>
+    <div id="thumb-tray" class="load-item"></div>
+</div>
+  <div class="mid" style="padding-bottom: 0px">
+
+
+<!-- /#home-slider -->
+    <div class="news">
+      <div class="wrap">
+        <?php if ($curLang === 'tc'): ?>
+        <div class="head">
+          <div class="tit"><a href="<?=$home?>auction">最新動態</a></div>
+          <div class="more"><a href="<?=$home?>auction">Read More</a></div>
+        </div>
+        <div class="content">
+          <div class="pic">
+            <?php if(strpos($newcontent->pic,',')): ?>
+              <a href="<?=$home?>auction">
+                <img src="<?php echo strstr($newcontent->pic, ',', TRUE) ?>" alt="">
+              </a>
+            <?php else: ?>
+              <a href="<?=$home?>auction">
+                <img src="<?php echo $newcontent->pic ?>" alt="">
+              </a>
+            <?php endif; ?>
+          </div>
+          <div class="article">
+            <span class="tit"><?php echo $newcontent->name_tc; ?></span>
+            <p class="cont"><?php echo $newcontent->descript_tc?></p>
+            <span class="detail"><a href="<?=$home?>auction">詳情</a></span>
+          </div>
+        </div>
+        <?php else: ?>
+          <div class="head">
+            <div class="tit"><a href="<?=$home?>auction">NEWS</a></div>
+            <div class="more"><a href="<?=$home?>auction">Read More</a></div>
+          </div>
+          <div class="content">
+            <div class="pic">
+                <?php if(strpos($newcontent->pic,',')): ?>
+                  <a href="<?=$home?>auction">
+                    <img src="<?php echo strstr($newcontent->pic, ',', TRUE) ?>" alt="">
+                  </a>
+                <?php else: ?>
+                  <a href="<?=$home?>auction">
+                    <img src="<?php echo $newcontent->pic ?>" alt="">
+                  </a>
+                <?php endif; ?>
+            </div>
+            <div class="article">
+              <span class="tit"><?php echo $newcontent->name_en; ?></span>
+              <p class="cont"><?php echo $newcontent->descript_en?></p>
+              <span class="detail"><a href="<?=$home?>auction">DETAILS</a></span>
+            </div>
+          </div>
+        <?php endif; ?>
+
+      </div>
+    </div>
+    <div class="products">
+    <?php if ($curLang === 'tc'): ?>
+      <?php foreach ($pic_clazz as $items): ?>
+      <div class="product1">
+        <div class="wrap">
+          <div class="head">
+            <div class="tit"><a href="<?=$home?>catalogue?cid=<?php echo $items['id']?>"><?php echo $items['name_tc'] ?></a></div>
+            <div class="more"><a href="<?=$home?>catalogue?cid=<?php echo $items['id']?>">Read More</a></div>
+          </div>
+          <?php foreach ($items['pic_content'] as $item): ?>
+          <div class="item">
+            <div class="img">
+              <?php if(strpos($item['pic'],',')): ?>
+                <a href="<?=$home?>catalogue/detail?id=<?php echo $item['id']?>">
+                  <img style="width:290px;" src="<?php echo strstr($item['pic'], ',', TRUE) ?>" alt="">
+                </a>
+              <?php else: ?>
+                <a href="<?=$home?>catalogue/detail?id=<?php echo $item['id']?>">
+                  <img style="width:290px" src="<?php echo $item['pic'] ?>" alt="">
+                </a>
+              <?php endif; ?>
+            </div>
+            <div class="detail">
+              <div class="name">
+                <?php echo $item['title_tc']; ?>
+              </div>
+              <div class="lot">
+                LOT : <span class="no"><?php echo $item['num']; ?></span>
+              </div>
+              <div class="estimated">
+                <?php if($item['prize_tc']): ?>
+                  成交價（含佣金）：HK$ <span class="money"><?php echo $item['prize_tc']; ?></span>
+                <?php else: ?>
+                  估計價格：HK$ <span class="money"><?php echo $item['prize_en']; ?></span>
+                <?php endif; ?>
+              </div>
+              <div class="instruction">
+                <!-- <?php echo $item['descript_tc']; ?> -->
+                <a href="<?=$home?>catalogue/detail?id=<?php echo $item['id']?>">
+                    查看更多
+                </a>
+              </div>
+            </div>
+          </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+      <?php endforeach; ?>
+    <?php else: ?>
+      <?php foreach ($pic_clazz as $items): ?>
+      <div class="product1">
+        <div class="wrap">
+          <div class="head">
+            <div class="tit"><a href="<?=$home?>catalogue?cid=<?php echo $items['id']?>"><?php echo $items['name_en'] ?></a></div>
+            <div class="more"><a href="<?=$home?>catalogue?cid=<?php echo $items['id']?>">Read More</a></div>
+          </div>
+          <?php foreach ($items['pic_content'] as $item): ?>
+          <div class="item cur">
+            <div class="img">
+              <?php if(strpos($item['pic'],',')): ?>
+                <a href="<?=$home?>catalogue/detail?id=<?php echo $item['id']?>">
+                  <img style="width:290px" src="<?php echo strstr($item['pic'], ',', TRUE) ?>" alt="">
+                </a>
+              <?php else: ?>
+                <a href="<?=$home?>catalogue/detail?id=<?php echo $item['id']?>">
+                  <img style="width:290px" src="<?php echo $item['pic'] ?>" alt="">
+                </a>
+              <?php endif; ?>
+            </div>
+            <div class="detail">
+              <div class="name">
+                <?php echo $item['title_en']; ?>
+              </div>
+              <div class="lot">
+                LOT : <span class="no"><?php echo $item['num']; ?></span>
+              </div>
+              <div class="estimated">
+                <?php if($item['prize_tc']): ?>
+                  PRICE (included premium):HK$ <span class="money"><?php echo $item['prize_tc']; ?></span>
+                <?php else: ?>
+                  ESTIMATE PRICE：HK$ <span class="money"><?php echo $item['prize_en']; ?></span>
+                <?php endif; ?>
+              </div>
+              <div class="instruction">
+                <!-- <?php echo $item['descript_en']; ?> -->
+                <a href="<?=$home?>catalogue/detail?id=<?php echo $item['id']?>">
+                    READ MORE
+                </a>
+              </div>
+            </div>
+          </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+      <?php endforeach; ?>
+    <?php endif; ?>
+    </div>
+</div>
+    <!-- <div class="tit"><a href="">鑾器天香<div class="all-tit">·茶道.香道.花器專場【完整圖錄】</div></a></div> -->
+<!-- <script src="<?php echo $resource_url; ?>js/swiper.min.js"></script> -->
+<script src="<?php echo $resource_url; ?>libs/supersized/js/supersized.3.2.7.js" charset="utf-8"></script>
+<script src="<?php echo $resource_url; ?>libs/supersized/theme/supersized.shutter.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+// 背景图片
+    var bg1 = '<?php echo $indexbg['list'][0]['pic'];?>';
+    if(bg1){
+
+        $('.products .product1:nth-child(1)').css('background-image', 'url('+bg1+')');
+    }
+    var bg2 = '<?php echo $indexbg['list'][1]['pic'];?>';
+    if(bg2){
+        $('.products .product1:nth-child(2)').css('background-image', 'url('+bg2+')');
+    }
+    var bg3 = '<?php echo $indexbg['list'][2]['pic'];?>';
+    if(bg3){
+        // var h3 = $('.products .product1:nth-child(3)').css('height');
+        // console.log(h3);
+        // $('.products .product1:nth-child(3)').css('height', );
+        $('.products .product1:nth-child(3)').css('background-image', 'url('+bg3+')');
+    }
+
+
+// 动画效果脚本
+    var a,b,c;
+    a=$(window).height();
+    b=$(window).scrollTop();
+    if(b>0){
+        $(".product1 .item").each(function(){
+            c=$(this).offset().top;
+            if(a+b>c){
+                $(this).addClass("move");
+            }
+        })
+    }
+    $(window).scroll(function(){
+        var a=$(window).height();
+        var b=$(this).scrollTop();
+        $(".product1 .item").each(function(){
+            c=$(this).offset().top;
+            if(a+b>c){
+                $(this).addClass("move");
+            }
+            else{
+
+            }
+        });
+    });
+// 省略文本脚本
+    $('.product1 .instruction p').each(function(){
+        var maxwidth=110;
+        if($(this).text().length > maxwidth){
+          $(this).text($(this).text().substring(0,maxwidth));
+          $(this).html($(this).html()+'...');
+        }
+    })
+});
+
+var addH = 0,
+    addh = 0,
+    bgh;
+var proArr = $('.product1');
+for (var i = 0; i < proArr.length; i++) {
+    var imgArr = $($('.product1')[i]).find('.item .img img');
+    for (var j = 0; j < imgArr.length; j++) {
+        if (j%2==0) {
+            var a1 = imgArr[j].height;
+            var a2 = imgArr[j+1]&&imgArr[j+1].height;
+            addh = a1>a2?a1:a2;
+            addh?addh -= 290:addh = 0;
+            addh > 0?addh: addh = 0;
+            addH += addh;
+            // console.log(addH);
+        }
+        if(j==3) {
+            var n = i+1;
+            bgh = $('.products .product1:nth-child('+n+')').height()+addH;
+            $('.products .product1:nth-child('+n+')').css('height', bgh);
+            // console.log(bgh);
+        }
+    }
+    addH = 0;
+}
+</script>
+<script src="<?php echo $resource_url; ?>js/index.js" charset="utf-8"></script>

@@ -1,0 +1,87 @@
+<style>
+.signup-upload-file{
+    position: relative;
+    top: -88px;
+    left: 363px;
+    border-radius: 3.5px;
+}
+.add-upload-file{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-radius: 3.5px;
+}
+.js_picPrevArea{
+    display: none;
+}
+.js_str{
+    width: 100%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+</style>
+<input type="file" value="" multiple="false" id="js_addImgs">
+<div class="js_picPrevArea"></div>
+
+<script src="<?php echo $resource_url; ?>js/jquery.uploadifive.js"></script>
+<script src="<?php echo $resource_url; ?>js/clipboard.js"></script>
+<script src="<?php echo $resource_url; ?>js/system/pic_content.js"></script>
+<script type="text/javascript">
+function copyUrl(n) {
+    var txt = $('.js_str'+n).find('button').data('val');
+    var clipboard = new Clipboard('.js_str'+n+' button',{
+        text: function() {
+            return txt;
+        }
+    });
+    clipboard.on('success', function(e) {
+        alert("复制成功");
+        clipboard.destroy();
+    });
+}
+
+    $(function() {
+        var n = 1;
+        $('#js_addImgs').uploadifive({
+            removeCompleted: true,
+            fileTypeDesc: '上传文件',
+            fileTypeExts: '*.jpg;*.jpeg;*.gif;*.png',
+            multi: true,
+            buttonText: '批量上传图片',
+            height: '25',
+            width: '100',
+            method: 'post',
+            fileObjName: 'uploadfile',
+            buttonClass: 'add-upload-file',
+            uploadScript: config.apiServer + 'pic_content/post',
+            formData: {
+                'actionxm': 'upload_photo'
+            },
+            onUploadComplete: function(file, data, response) {
+                result = $.parseJSON(data);
+                if(result['status']==0) {
+                    var html = result['name']+',';
+                    $('.js_picPrevArea').append(html);
+                } else {
+                    alert(result['msg']);
+                }
+            },
+            onQueueComplete: function(file, data, response) {
+                function addP(){
+                    var str = $('.js_picPrevArea').html();
+                    str = str.substr(0,str.length-1);
+                    str += '<button data-val="'+str+'" onclick="copyUrl('+n+')">复制</button>';
+                    var str2 = '<div class="js_str js_str'+n+'"></div>';
+                    $('.js_picPrevArea').after(str2);
+                    $('.js_str'+n).html(str);
+                    $('.js_picPrevArea').html('');
+                    n++;
+                }
+                addP();
+            }
+        });
+
+
+
+    })
+</script>

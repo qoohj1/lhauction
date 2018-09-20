@@ -1,0 +1,705 @@
+2018/01/08 16:04:33 [error] 37562#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /Users/huangjiang640/curio-cms/website/codeigniter/database/drivers/mysql/mysql_driver.php:91
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB_driver.php(115): CI_DB_mysql_driver->db_pconnect()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(148): CI_DB_driver->initialize()
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB(Array, NULL)
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#5 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#6 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__constr" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1"
+2018/01/08 16:04:42 [error] 37562#0: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /Users/huangjiang640/curio-cms/website/codeigniter/database/drivers/mysql/mysql_driver.php:91
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB_driver.php(115): CI_DB_mysql_driver->db_pconnect()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(148): CI_DB_driver->initialize()
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB(Array, NULL)
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#5 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#6 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__constr" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:15:38 [error] 37562#0: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /Users/huangjiang640/curio-cms/website/codeigniter/database/drivers/mysql/mysql_driver.php:91
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB_driver.php(115): CI_DB_mysql_driver->db_pconnect()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(148): CI_DB_driver->initialize()
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB(Array, NULL)
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#5 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#6 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construc" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:17:18 [error] 37562#0: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:17:36 [error] 37562#0: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:24:22 [error] 37562#0: *44 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:24:24 [error] 37562#0: *44 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:24:35 [error] 37562#0: *44 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:41 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:41 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:41 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:41 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:43 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:43 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:43 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:25:43 [error] 37562#0: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:28:32 [error] 37562#0: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:88
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205): r" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:28:33 [error] 37562#0: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:88
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205): r" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:28:42 [error] 37562#0: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /Users/huangjiang640/curio-cms/website/www/config/database.php:88
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/Co" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:57:36 [error] 37562#0: *125 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /php.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:58:08 [error] 37562#0: *125 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /php.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:58:09 [error] 37562#0: *125 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /php.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:58:34 [error] 37562#0: *125 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /php.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 16:58:35 [error] 37562#0: *125 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /php.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 18:59:39 [error] 41483#0: *165 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/codeigniter/database/drivers/mysql/mysql_driver.php:73
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB_driver.php(115): CI_DB_mysql_driver->db_connect()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(148): CI_DB_driver->initialize()
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB(Array, NULL)
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#5 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#6 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construc" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 18:59:42 [error] 41483#0: *165 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/codeigniter/database/drivers/mysql/mysql_driver.php:73
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB_driver.php(115): CI_DB_mysql_driver->db_connect()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(148): CI_DB_driver->initialize()
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB(Array, NULL)
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#5 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#6 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct(" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:01:05 [error] 41483#0: *182 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205):" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:01:08 [error] 41483#0: *182 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:01:29 [error] 41483#0: *182 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:01:34 [error] 41483#0: *182 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:88
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205): r" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:08:58 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:08:59 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:15 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:16 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:16 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:38 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:38 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:38 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:38 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:40 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:40 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:40 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:40 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:41 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:09:41 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:10:31 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:10:31 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:10:31 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:10:46 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:10:54 [error] 41483#0: *189 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /Users/huangjiang640/curio-cms/website/adm/config/database.php:89
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/adm/core/MY_Controller.php(15): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/adm/controllers/login.php(11): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(308): Login->__construct()
+#8 /Users/huangjiang640/curio-cms/website/adm/index.php(205" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/login HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:13:50 [error] 41483#0: *215 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:13:50 [error] 41483#0: *215 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/08 19:13:51 [error] 41483#0: *215 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /Users/huangjiang640/curio-cms/website/www/config/database.php:83
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/codeigniter/database/DB.php(41): include()
+#1 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(346): DB('', NULL)
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(1171): CI_Loader->database()
+#3 /Users/huangjiang640/curio-cms/website/codeigniter/core/Loader.php(152): CI_Loader->_ci_autoloader()
+#4 /Users/huangjiang640/curio-cms/website/codeigniter/core/Controller.php(51): CI_Loader->initialize()
+#5 /Users/huangjiang640/curio-cms/website/www/core/MY_Controller.php(11): CI_Controller->__construct()
+#6 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(226): MY_Controller->__construct()
+#7 /Users/huangjiang640/curio-cms/website/codeigniter/core/Hooks.php(129): CI_Hooks->_run_hook(Array)
+#8 /Users/huangjiang640/curio-cms/website/codeigniter/core/" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/01/30 15:08:29 [error] 70882#0: *2212 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type stdClass as array in /Users/huangjiang640/curio-cms/website/adm/models/pic_content_model.php on line 39" while reading upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content/get?actionxm=getList&page=1&size=20&keyword= HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/01/31 22:12:22 [error] 70882#0: *2327 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ''and '' (T_CONSTANT_ENCAPSED_STRING) in /Users/huangjiang640/curio-cms/website/adm/models/pic_content_model.php on line 29" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/01/31 22:17:13 [error] 70882#0: *2348 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING) in /Users/huangjiang640/curio-cms/website/adm/models/pic_content_model.php on line 33" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/02/01 22:17:25 [error] 70882#0: *2578 client intended to send too large body: 5514790 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/02/01 22:24:18 [error] 70882#0: *2588 client intended to send too large body: 5514790 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/02/12 09:20:20 [error] 70882#0: *2810 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'PHPExcel_Reader_Excel2007' not found in /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php on line 145" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/02/12 09:31:18 [error] 70882#0: *2829 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function getHighestColumn() on null in /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php on line 157" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/02/12 09:32:34 [error] 70882#0: *2842 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught exception 'PHPExcel_Exception' with message 'Your requested sheet index: 1 is out of bounds. The actual number of sheets is 1.' in /Users/huangjiang640/curio-cms/website/adm/libraries/PHPExcel.php:577
+Stack trace:
+#0 /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php(158): PHPExcel->getSheet(1)
+#1 [internal function]: Pic_content->post()
+#2 /Users/huangjiang640/curio-cms/website/codeigniter/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /Users/huangjiang640/curio-cms/website/adm/index.php(205): require_once('/Users/huangjia...')
+#4 {main}
+  thrown in /Users/huangjiang640/curio-cms/website/adm/libraries/PHPExcel.php on line 577" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/02/12 09:34:14 [error] 70882#0: *2853 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function getHighestColumn() on null in /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php on line 159" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/02/12 10:21:05 [error] 70882#0: *2936 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php on line 183" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/index"
+2018/02/12 10:46:48 [error] 70882#0: *3053 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call-time pass-by-reference has been removed in /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php on line 195" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/index"
+2018/02/12 10:49:07 [error] 70882#0: *3053 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '&' in /Users/huangjiang640/curio-cms/website/adm/controllers/pic_content.php on line 194" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/index"
+2018/02/28 15:48:14 [error] 70882#0: *5164 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /tc/contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 15:48:23 [error] 70882#0: *5161 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /tc/contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 15:48:30 [error] 70882#0: *5166 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /tc/contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact?"
+2018/02/28 15:48:37 [error] 70882#0: *5165 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /tc/contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact?"
+2018/02/28 16:07:21 [error] 70882#0: *5269 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 16:09:53 [error] 70882#0: *5284 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact"
+2018/02/28 16:10:17 [error] 70882#0: *5284 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:10:43 [error] 70882#0: *5302 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:01 [error] 70882#0: *5302 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:14 [error] 70882#0: *5294 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:20 [error] 70882#0: *5297 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:24 [error] 70882#0: *5301 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:27 [error] 70882#0: *5301 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:48 [error] 70882#0: *5301 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:11:56 [error] 70882#0: *5302 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:12:19 [error] 70882#0: *5298 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:50:52 [error] 70882#0: *5322 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact"
+2018/02/28 16:50:58 [error] 70882#0: *5321 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:51:01 [error] 70882#0: *5326 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact?"
+2018/02/28 16:52:05 [error] 70882#0: *5321 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact"
+2018/02/28 17:00:11 [error] 70882#0: *5379 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact"
+2018/02/28 17:00:33 [error] 70882#0: *5381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/contact"
+2018/02/28 17:02:29 [error] 70882#0: *5390 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:02:53 [error] 70882#0: *5390 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 42" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:08:23 [error] 70882#0: *5416 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:12:50 [error] 70882#0: *5436 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:13:27 [error] 70882#0: *5438 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:15:38 [error] 70882#0: *5445 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:16:39 [error] 70882#0: *5456 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:18:11 [error] 70882#0: *5468 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:23:21 [error] 70882#0: *5474 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact?"
+2018/02/28 17:31:00 [error] 70882#0: *5484 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/02/28 17:34:28 [error] 70882#0: *5508 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function cataRequest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 44" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 09:34:44 [error] 70882#0: *6091 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function from() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 43" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/en/contact"
+2018/03/07 09:37:45 [error] 70882#0: *6099 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function from() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 43" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /contact/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/en/contact"
+2018/03/07 09:50:18 [error] 70882#0: *6114 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'Mailer' not found in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:09:15 [error] 70882#0: *6116 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/third_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:09:38 [error] 70882#0: *6116 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'Mailer' not found in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:09:46 [error] 70882#0: *6116 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/third_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:15:13 [error] 70882#0: *6120 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/third_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:15:14 [error] 70882#0: *6120 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/third_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:15:15 [error] 70882#0: *6120 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/third_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 10:15:15 [error] 70882#0: *6120 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/third_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 11:10:12 [error] 70882#0: *6142 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Contact::send() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/03/07 11:12:11 [error] 70882#0: *6147 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Contact::send() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:26:19 [error] 70882#0: *6154 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Contact::send() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:28:00 [error] 70882#0: *6156 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Contact::send() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:30:46 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:31:47 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:31:48 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:31:48 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:32:53 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Contact::send() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:32:56 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:33:12 [error] 70882#0: *6158 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 14" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:34:38 [error] 70882#0: *6166 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:34:42 [error] 70882#0: *6166 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:34:42 [error] 70882#0: *6166 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:34:43 [error] 70882#0: *6166 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:35:01 [error] 70882#0: *6173 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function send() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:38:39 [error] 70882#0: *6191 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required 'www/hird_party/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 10" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:42:46 [error] 70882#0: *6204 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Mailer::s1end() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:44:31 [error] 70882#0: *6208 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/this is a message.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 12:44:42 [error] 70882#0: *6208 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/this is a message.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 13:41:02 [error] 70882#0: *6215 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function setMailTemplate() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 13:41:41 [error] 70882#0: *6215 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function setMailTemplate() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:16:31 [error] 70882#0: *6218 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function setMailTemplate() on null in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:23:49 [error] 70882#0: *6220 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/Users/huangjiang640/curio-cms/website/www/views/email/this is a message.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:29:17 [error] 70882#0: *6237 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/this is a message.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:29:31 [error] 70882#0: *6237 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/Users/huangjiang640/curio-cms/website/www/views/email/this is a message.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:36:27 [error] 70882#0: *6244 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/Users/huangjiang640/curio-cms/website/www/views/email/email.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:36:39 [error] 70882#0: *6244 FastCGI sent in stderr: "PHP message: PHP Fatal error:  require_once(): Failed opening required '/Users/huangjiang640/curio-cms/website/www/views/email/email.php' (include_path='.:') in /Users/huangjiang640/curio-cms/website/www/libraries/Mailer.php on line 165" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:54:39 [error] 70882#0: *6291 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot access private property Mailer::$PHPMailer in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/07 18:54:52 [error] 70882#0: *6291 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot access private property Mailer::$PHPMailer in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/12 15:00:34 [error] 70882#0: *6669 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Contact::setMailTemplate() in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/12 15:06:04 [error] 70882#0: *6705 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot access private property Mailer::$PHPMailer in /Users/huangjiang640/curio-cms/website/www/controllers/contact.php on line 17" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/contact HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 14:42:14 [error] 70882#0: *9295 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /Users/huangjiang640/curio-cms/website/adm/helpers/common_helper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_clazz/get?actionxm=search HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 14:42:18 [error] 70882#0: *9295 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /Users/huangjiang640/curio-cms/website/adm/helpers/common_helper.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_clazz/get?actionxm=search HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 16:39:18 [error] 70882#0: *9391 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '--' (T_DEC), expecting ']' in /Users/huangjiang640/curio-cms/website/adm/views/pic_content_index.phtml on line 53" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 16:40:24 [error] 70882#0: *9394 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 131334144 bytes) in /Users/huangjiang640/curio-cms/website/codeigniter/core/Exceptions.php on line 185" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 16:41:11 [error] 70882#0: *9394 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 131334144 bytes) in /Users/huangjiang640/curio-cms/website/codeigniter/core/Exceptions.php on line 185" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 16:42:35 [error] 70882#0: *9400 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 131334144 bytes) in /Users/huangjiang640/curio-cms/website/codeigniter/core/Exceptions.php on line 185" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/20 16:43:12 [error] 70882#0: *9400 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 131334144 bytes) in /Users/huangjiang640/curio-cms/website/codeigniter/core/Exceptions.php on line 185" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_clazz"
+2018/03/20 16:57:22 [error] 70882#0: *9454 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '<' in /Users/huangjiang640/curio-cms/website/adm/views/pic_content_index.phtml on line 59" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_clazz"
+2018/03/21 17:52:46 [error] 70882#0: *10443 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'select' (T_STRING) in /Users/huangjiang640/curio-cms/website/adm/models/pic_content_model.php on line 59" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_clazz"
+2018/03/21 18:18:45 [error] 70882#0: *10579 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function length() in /Users/huangjiang640/curio-cms/website/adm/views/pic_content_index.phtml on line 54" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/pic_content HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/22 10:04:04 [error] 70882#0: *11102 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/clazz"
+2018/03/22 10:20:00 [error] 70882#0: *11238 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/banner"
+2018/03/22 10:29:14 [error] 70882#0: *11268 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/banner"
+2018/03/22 10:40:08 [error] 70882#0: *11329 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/admin"
+2018/03/22 10:52:47 [error] 70882#0: *11386 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_clazz"
+2018/03/22 10:52:50 [error] 70882#0: *11386 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_clazz"
+2018/03/22 14:43:39 [error] 70882#0: *11414 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/banner"
+2018/03/22 14:47:18 [error] 70882#0: *11497 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content"
+2018/03/22 15:27:47 [error] 70882#0: *11740 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_clazz"
+2018/03/22 16:25:32 [error] 70882#0: *11956 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/2"
+2018/03/22 16:59:26 [error] 70882#0: *12004 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:03:07 [error] 70882#0: *12022 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:04:07 [error] 70882#0: *12022 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:04:08 [error] 70882#0: *12022 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com"
+2018/03/22 17:04:14 [error] 70882#0: *12022 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com"
+2018/03/22 17:04:27 [error] 70882#0: *12029 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:04:29 [error] 70882#0: *12022 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:07:10 [error] 70882#0: *12044 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:08:25 [error] 70882#0: *12045 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:08:25 [error] 70882#0: *12045 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:10:13 [error] 70882#0: *12046 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:10:13 [error] 70882#0: *12046 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:10:13 [error] 70882#0: *12046 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:15:15 [error] 70882#0: *12061 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/22 17:15:21 [error] 70882#0: *12061 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com"
+2018/03/22 17:16:18 [error] 70882#0: *12061 directory index of "/Users/huangjiang640/curio-cms/website/adm/static/" is forbidden, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/static/ HTTP/1.1", host: "dev.curio.com"
+2018/03/22 17:28:49 [error] 70882#0: *12132 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function search() on null in /Users/huangjiang640/curio-cms/website/adm/controllers/staticpage.php on line 26" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/staticpage HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/03/23 14:46:42 [error] 70882#0: *12513 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Static_model::add() in /Users/huangjiang640/curio-cms/website/adm/controllers/staticpage.php on line 108" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/staticpage/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/staticpage/update/1"
+2018/03/23 14:51:45 [error] 70882#0: *12520 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Static_model::add() in /Users/huangjiang640/curio-cms/website/adm/controllers/staticpage.php on line 108" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/staticpage/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/staticpage/update/1"
+2018/03/23 15:09:05 [error] 70882#0: *12714 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function latest() on null in /Users/huangjiang640/curio-cms/website/www/controllers/auction.php on line 18" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/auction HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/en/catalogue?cid=2"
+2018/03/26 09:06:53 [error] 70882#0: *14651 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type stdClass as array in /Users/huangjiang640/curio-cms/website/www/controllers/catalogue.php on line 65" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 09:17:36 [error] 70882#0: *14704 client intended to send too large body: 27967889 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/pic_content/post HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/pic_content/add"
+2018/03/26 13:48:00 [error] 70882#0: *15158 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$next' (T_VARIABLE) in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 123" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/03/26 14:10:08 [error] 70882#0: *15226 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Can't use function return value in write context in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 126" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=9 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=6"
+2018/03/26 14:10:26 [error] 70882#0: *15226 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Can't use function return value in write context in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 127" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=9 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=6"
+2018/03/26 14:10:28 [error] 70882#0: *15226 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Can't use function return value in write context in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 127" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=9 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=6"
+2018/03/26 14:10:38 [error] 70882#0: *15226 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined function bool() in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 126" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=9 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=6"
+2018/03/26 14:12:08 [error] 70882#0: *15233 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 128" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=9 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=6"
+2018/03/26 15:32:08 [error] 70882#0: *15408 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 146" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 15:32:26 [error] 70882#0: *15408 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 146" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 15:32:27 [error] 70882#0: *15408 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 146" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 15:32:27 [error] 70882#0: *15408 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 146" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 15:32:28 [error] 70882#0: *15408 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 146" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 15:38:48 [error] 70882#0: *15457 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::result_array() in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 148" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 15:42:56 [error] 70882#0: *15460 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method CI_DB_mysql_result::limit() in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 147" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue/detail?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=2"
+2018/03/26 16:44:46 [error] 70882#0: *15727 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Indexbg_model::updateBg() in /Users/huangjiang640/curio-cms/website/adm/controllers/indexbg.php on line 56" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/indexbg/post HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/indexbg"
+2018/03/27 15:14:54 [error] 70882#0: *17536 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type stdClass as array in /Users/huangjiang640/curio-cms/website/www/controllers/web.php on line 19" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/web/getMedia?id=1 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/press_media"
+2018/03/27 16:22:51 [error] 70882#0: *17739 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ':' in /Users/huangjiang640/curio-cms/website/adm/views/content_update.phtml on line 41" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /adm/content/add/3 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content"
+2018/04/02 09:43:03 [error] 70882#0: *19396 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function result_array() on null in /Users/huangjiang640/curio-cms/website/www/models/catalogue_model.php on line 37" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/catalogue?cid=12 HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/catalogue?cid=36"
+2018/04/03 15:59:44 [error] 13520#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/04/03 15:59:44 [error] 13520#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/"
+2018/04/03 15:59:45 [error] 13520#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/ HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com"
+2018/04/03 15:59:45 [error] 13520#0: *1 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/"
+2018/04/09 16:25:39 [error] 13520#0: *1899 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:26:01 [error] 13520#0: *1900 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:26:13 [error] 13520#0: *1901 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:30:44 [error] 13520#0: *1904 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:42:57 [error] 13520#0: *1910 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:43:13 [error] 13520#0: *1907 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:45:18 [error] 13520#0: *1919 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/09 16:45:36 [error] 13520#0: *1921 client intended to send too large body: 1738775 bytes, client: 127.0.0.1, server: dev.curio.com, request: "POST /adm/content/post?actionxm=upload_contentImg HTTP/1.1", host: "dev.curio.com", referrer: "http://dev.curio.com/adm/content/add/1"
+2018/04/10 17:33:01 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:33:18 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:34:19 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:35:01 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:35:02 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:35:02 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:35:02 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:35:08 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/privacy HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:35:12 [error] 22374#0: *3381 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Static_model::tandc() in /Users/huangjiang640/curio-cms/website/www/models/static_model.php on line 99" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/terms_and_condition HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/contact"
+2018/04/10 17:44:49 [error] 22374#0: *3420 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/tc/notice_to_bidders.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 17:45:33 [error] 22374#0: *3420 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /tc/notice_to_bidders.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/tc/terms_and_condition"
+2018/04/10 18:08:00 [error] 22374#0: *3505 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 127.0.0.1, server: dev.curio.com, request: "GET /en/terms_and_condition.php HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "dev.curio.com", referrer: "http://dev.curio.com/en/notice_to_bidders"

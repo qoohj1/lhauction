@@ -1,0 +1,81 @@
+<div class="mid4 sitemap">
+  <div class="bottom">
+    <div class="locate wrap">
+      <span class="content"><?=$sitemap?></span>
+    </div>
+  </div>
+  <div class="wrap">
+      <div class="container">
+        <div class="auction">
+          <div class="tit">
+            <a href="<?=$home?>auction"><?=$navi2?></a>
+          </div>
+          <div class="subtit">
+            <div class="sub-tit">
+              <a href="<?=$home?>auction"><?=$subnavi1?></a>
+            </div>
+            <div class="sub-tit">
+              <a href="<?=$home?>auction_past"><?=$subnavi2?></a>
+            </div>
+            <?php if ($curLang === 'tc'): ?>
+              <?php foreach ($auctionCate as $category): ?>
+                  <div class="sub-tit"><a href="<?=$home?>auction_past?aid=<?php echo $category['id']?>"><?php echo $category['name_tc']?></a></div>
+              <?php endforeach; ?>
+            <?php else: ?>
+              <?php foreach ($auctionCate as $category): ?>
+                  <div class="sub-tit"><a href="<?=$home?>auction_past?aid=<?php echo $category['id']?>"><?php echo $category['name_en']?></a></div>
+              <?php endforeach; ?>
+            <?php endif; ?>
+
+          </div>
+        </div>
+        <div class="buy">
+          <div class="tit">
+            <a href="<?=$home?>buy"><?=$navi4?></a>
+          </div>
+          <div class="subtit">
+            <div class="sub-tit">
+              <a href="<?=$home?>buy"><?=$subnavi3?></a>
+            </div>
+            <div class="sub-tit">
+              <a href="<?=$home?>sell"><?=$subnavi4?></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="news">
+          <div class="tit">
+            <a href="<?=$home?>press_release"><?=$navi5?></a>
+          </div>
+          <div class="subtit">
+            <div class="sub-tit">
+              <a href="<?=$home?>press_release"><?=$subnavi5?></a>
+            </div>
+            <div class="sub-tit">
+              <a href="<?=$home?>press_media"><?=$subnavi6?></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="catalogue">
+            <div class="tit">
+                <a href="<?=$home?>catalogue"><?=$navi3?></a>
+            </div>
+            <div class="tit">
+                <a href="<?=$home?>about"><?=$subnavi7?></a>
+            </div>
+            <div class="tit">
+                <a href="<?=$home?>contact"><?=$subnavi8?></a>
+            </div>
+            <div class="tit">
+                <a href="<?=$home?>terms_and_condition"><?=$terms?></a>
+            </div>
+            <div class="tit">
+                <a href="<?=$home?>privacy"><?=$privacy?></a>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- <script src="<?php echo $resource_url; ?>js/swiper.min.js"></script> -->
+<!-- <script src="<?php echo $resource_url; ?>js/catalogue_detail.js" charset="utf-8"></script> -->

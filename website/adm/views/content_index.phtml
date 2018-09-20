@@ -1,0 +1,49 @@
+<div class="well well-sm">
+    <form class="form-inline js_searchFrom">
+        <div class="form-group">
+            <label for="title">标题</label>
+            <input type="text" class="form-control" id="title" placeholder="输入查询的标题">
+        </div>
+        <button type="submit" class="btn btn-primary">搜索</button>
+        |
+        <button type="button" class="btn btn-success js_addContent"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新建</button>
+    </form>
+</div>
+<div class="well well-sm" style="height:80px">
+    <form class="form-inline js_searchFrom2">
+        <div class="form-group">
+            <label for="title">選擇分類</label><br>
+            <!-- <input type="text" class="form-control" id="title" placeholder="输入查询的标题"> -->
+            <div class="col-sm-8">
+                <select class="form-control js_add_menuTree" style="position:absolute;left:0px;width:800px;">
+
+                    <option value="0">/</option>
+                    <?php foreach ($clazz as $list): ?>
+                    <?php
+                    $prefix = '';
+                    while($list['level'] >= 0) {
+                        $prefix .= '|--';
+                        $list['level']--;
+                    };
+                    ?>
+                    <option value="<?=$list['id']?>"><?=$prefix?><?=$list['name_en']?>(<?=$list['name_tc']?>)</option>
+                    <?php endforeach ?>
+                </select>
+            </div>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">搜索</button>
+        |
+        <button type="button" class="btn btn-success js_addContent"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新建</button> -->
+        <!-- <button type="button" class="btn btn-success js_addExl"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>导入EXEL</button> -->
+    </form>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover js_table">
+    </table>
+</div>
+<nav style="float:right;">
+    <ul class="pagination js_page"></ul>
+</nav>
+
+<script src="<?php echo $resource_url; ?>js/system/content.js"></script>

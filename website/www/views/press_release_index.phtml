@@ -1,0 +1,94 @@
+  <div class="mid" style="height:1472px">
+    <div class="bottom">
+      <div class="locate wrap">
+        <span class="content"><?=$navi5?> > <?=$subnavi5?></span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="menu <?=$curLang?>">
+        <div class="nav press_release">
+          <div class="tit">
+            <?=$subnavi5?>
+          </div>
+          <div class="sub-nav">
+              <?php if ($curLang === 'tc'): ?>
+                <?php foreach ($submenu as $sub): ?>
+                    <div class="sub-tit" data-id="<?=$sub['id']?>"><a href="<?=$home?>press_release?id=<?=$sub['id']?>"><?php echo $sub['name_tc']?></a></div>
+                <?php endforeach; ?>
+              <?php else: ?>
+                <?php foreach ($submenu as $sub): ?>
+                    <div class="sub-tit" data-id="<?=$sub['id']?>"><a href="<?=$home?>press_release?id=<?=$sub['id']?>"><?php echo $sub['name_en']?></a></div>
+                <?php endforeach; ?>
+              <?php endif; ?>
+          </div>
+        </div>
+        <div class="nav press_media">
+          <div class="tit">
+            <a href="press_media">
+              <?=$subnavi6?>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container3 <?=$curLang?>">
+        <?php if ($curLang === 'tc'): ?>
+          <?php foreach ($searchNews['list'] as $new): ?>
+            <div class="release item">
+              <!-- <div class="pic">
+                <a href="<?=$home?>press_release/detail?id=<?=$new['id']?>">
+                  <?php if(strpos($new['pic'],',')): ?>
+                    <img src="<?php echo strstr($new['pic'], ',', TRUE) ?>" alt="">
+                  <?php else: ?>
+                    <img src="<?php echo $new['pic'] ?>" alt="">
+                  <?php endif; ?>
+                </a>
+              </div> -->
+              <div class="detail">
+                  <div class="date">
+                      <?php echo date('y-m-d',$new['create_time']) ?>
+                  </div>
+                <div class="tit">
+                  <a href="<?=$home?>press_release/detail?id=<?=$new['id']?>">
+                    <?php echo $new['title_tc'] ?>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php else: ?>
+          <?php foreach ($searchNews['list'] as $new): ?>
+            <div class="release item">
+              <!-- <div class="pic">
+                <a href="<?=$home?>press_release/detail?id=<?=$new['id']?>">
+                  <?php if(strpos($new['pic'],',')): ?>
+                    <img src="<?php echo strstr($new['pic'], ',', TRUE) ?>" alt="">
+                  <?php else: ?>
+                    <img src="<?php echo $new['pic'] ?>" alt="">
+                  <?php endif; ?>
+                </a>
+              </div> -->
+              <div class="detail">
+                  <div class="date">
+                      <?php echo date('y-m-d',$new['create_time']) ?>
+                  </div>
+                <div class="tit">
+                  <a href="<?=$home?>press_release/detail?id=<?=$new['id']?>">
+                    <?php echo $new['title_en'] ?>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php endif;?>
+        <div id="pagelist">
+          <ul>
+            <?php echo $this->pagination->create_links();?>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+<script src="<?php echo $resource_url; ?>js/press_release.js" charset="utf-8"></script>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=640,initial-scale=0.3,maximum-scale=0.3,minimum-scale=0.3,user-scalable=no"> -->
+  <meta name="viewport" content="width=640,initial-scale=0.3">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><?=$title?></title>
+  <meta property="og:title" content="<?=$title?>" />
+  <meta property="og:description" content="<?=$og_description?>" />
+  <meta name="keywords" content="仕宏拍賣, L & H Auction">
+  <meta name="description" content="<?=$description?>">
+  <link rel="stylesheet" href="<?php echo $resource_url; ?>css/animate.css">
+  <link rel="stylesheet" href="<?php echo $resource_url; ?>css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo $resource_url; ?>css/reset.css">
+  <link rel="stylesheet" href="<?php echo $resource_url; ?>css/index3_tc.css">
+  <?php if ($curLang === 'en'): ?>
+    <link rel="stylesheet" href="<?php echo $resource_url; ?>css/index3_en.css">
+  <?php endif; ?>
+  <link rel="stylesheet" href="<?php echo $resource_url; ?>css/swiper.min.css">
+  <!-- <script type="text/javascript" src="<?php echo $resource_url; ?>js/jquery-3.2.0.js"></script> -->
+  <script type="text/javascript" src="<?php echo $resource_url; ?>js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="<?php echo $resource_url; ?>js/common.js"></script>
+</head>
+<style>
+<?=$css?>
+</style>
+<body>
+  <div class="header">
+    <div class="line"></div>
+    <div class="wrap">
+      <div class="top">
+          <div class="logo">
+            <a href="<?=$home?>">
+              <img src="<?php echo $resource_url; ?>img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="search">
+            <form action="<?=$home?>catalogue/search" method="post">
+              <input type="text" name="searchText" value="" placeholder="<?=$placeholder?>">
+              <button id="submit" type="submit" value="Submit"></button>
+              <!-- <img src="<?php echo $resource_url; ?>img/btn_search.png" alt="" class="searchimg"> -->
+            </form>
+          </div>
+          <div class="lang">
+            <span><a class="enlang" href="javascript:;">ENG</a> / <a href="javascript:;" class="tclang">繁</a></span>
+          </div>
+      </div>
+      <div class="nav">
+          <div class="navi home">
+            <a href="<?=$home?>"><?=$navi1?></a>
+            <div class="navbg"><img src="<?php echo $resource_url; ?>img/btn_nav_selected.png" alt=""></div>
+          </div>
+          <div class="navi auction">
+            <a href="<?=$home?>auction"><?=$navi2?></a>
+            <div class="navbg"><img src="<?php echo $resource_url; ?>img/btn_nav_selected.png" alt=""></div>
+            <ul class="sub-nav">
+              <li><a href="<?=$home?>auction"><?=$subnavi1?></a></li>
+              <li style="border-bottom:1px solid #979797"><a href="<?=$home?>auction_past"><?=$subnavi2?></a></li>
+            </ul>
+          </div>
+          <div class="navi catalogue">
+            <a href="<?=$home?>catalogue"><?=$navi3?></a>
+            <div class="navbg"><img src="<?php echo $resource_url; ?>img/btn_nav_selected.png" alt=""></div>
+            <!-- <ul class="sub-nav">
+              <?php if ($curLang === 'tc'): ?>
+                <?php foreach ($categorylist as $category): ?>
+                    <li><?php echo $category['name_tc']?></li>
+                <?php endforeach; ?>
+              <?php else: ?>
+                <?php foreach ($categorylist as $category): ?>
+                  <li><?php echo $category['name_en']?></li>
+                <?php endforeach; ?>
+              <?php endif; ?>
+
+            </ul>
+            <ul class="sub-nav2">
+              <li>123</li>
+              <li>123</li>
+              <li>123</li>
+            </ul> -->
+          </div>
+          <div class="navi buy">
+            <a href="<?=$home?>buy"><?=$navi4?></a>
+            <div class="navbg"><img src="<?php echo $resource_url; ?>img/btn_nav_selected.png" alt=""></div>
+            <ul class="sub-nav">
+              <li><a href="<?=$home?>buy"><?=$subnavi3?></a></li>
+              <li style="border-bottom:1px solid #979797"><a href="<?=$home?>sell"><?=$subnavi4?></a></li>
+            </ul>
+          </div>
+          <div class="navi press_release">
+            <a href="<?=$home?>press_release"><?=$navi5?></a>
+            <div class="navbg"><img src="<?php echo $resource_url; ?>img/btn_nav_selected.png" alt=""></div>
+            <ul class="sub-nav">
+              <li><a href="<?=$home?>press_release"><?=$subnavi5?></a></li>
+              <li style="border-bottom:1px solid #979797"><a href="<?=$home?>press_media"><?=$subnavi6?></a></li>
+            </ul>
+          </div>
+          <div class="navi about" style="border-right:1px solid #979797">
+            <a href="<?=$home?>about"><?=$navi6?></a>
+            <div class="navbg"><img src="<?php echo $resource_url; ?>img/btn_nav_selected.png" alt=""></div>
+            <ul class="sub-nav">
+              <li><a href="<?=$home?>about"><?=$subnavi7?></a></li>
+              <li style="border-bottom:1px solid #979797"><a href="<?=$home?>contact"><?=$subnavi8?></a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>

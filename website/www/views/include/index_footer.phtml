@@ -1,0 +1,104 @@
+<div class="footer">
+  <div class="wrap">
+    <div class="content">
+      <div class="logo">
+        <img src="<?php echo $resource_url; ?>img/logo_white.png" alt="">
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="<?=$home?>contact"><?=$contact?></a></li>
+          <li><a href="<?=$home?>sitemap"><?=$sitemap?></a></li>
+          <li><a href="<?=$home?>terms_and_condition"><?=$terms?></a></li>
+          <li><a href="<?=$home?>privacy"><?=$privacy?></a></li>
+        </ul>
+        <span style="padding-top:2px;"><?=$copyright?></span>
+      </div>
+      <div class="icon">
+        <a target="_blank" href="http://www.lhauction.com.hk/site_upload/edm/edm_wechat.jpg"><img src="<?php echo $resource_url; ?>img/btn_weixin.png" alt=""></a>
+        <a target="_blank" href="http://www.youtube.com/user/lhacution"><img src="<?php echo $resource_url; ?>img/btn_youtube.png" alt=""></a>
+        <a target="_blank" href="http://www.facebook.com/lhauction"><img src="<?php echo $resource_url; ?>img/btn_fb.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+// 当前目录高亮
+  var curNav = '<?=$curNav?>',
+      curLang = '<?=$curLang?>';
+  if(!curNav){
+    $('.home').addClass('cur');
+  }else{
+    switch(curNav)
+    {
+    case 'auction_past':
+      curNav = 'auction';
+      break;
+    case 'sell':
+      curNav = 'buy';
+      break;
+    case 'press_media':
+      curNav = 'press_release';
+      break;
+    case 'contact':
+      curNav = 'about';
+      break;
+    default:
+    }
+    curNav = '.' + curNav;
+    if($(curNav)){
+      $(curNav).addClass('cur');
+    }
+  }
+  $('.'+curLang+'lang').addClass('cur');
+// 导航控制鼠标经过
+  $('.navi').mouseover(function(){
+    $(this).parent().find('.hover').removeClass('hover');
+    $(this).addClass('hover');
+    $(this).children('.sub-nav').addClass('hover');
+    $(this).children('.sub-nav2').addClass('hover');
+  })
+  $('.mid').mouseover(function(){
+    $('.sub-nav').removeClass('hover');
+    $('.sub-nav2').removeClass('hover');
+    $('.navi').removeClass('hover');
+  })
+  $('.mid3').mouseover(function(){
+    $('.sub-nav').removeClass('hover');
+    $('.sub-nav2').removeClass('hover');
+    $('.navi').removeClass('hover');
+  })
+  $('.mid4').mouseover(function(){
+    $('.sub-nav').removeClass('hover');
+    $('.sub-nav2').removeClass('hover');
+    $('.navi').removeClass('hover');
+  })
+  $('.header .top').mouseover(function(){
+    $('.sub-nav').removeClass('hover');
+    $('.sub-nav2').removeClass('hover');
+    $('.navi').removeClass('hover');
+  })
+// 控制切换语言url
+  $('.tclang').click(function(event) {
+    /* Act on the event */
+    var str = window.location.href;
+    if(str.indexOf(/en/)>0){
+      str = str.replace(/\/en\//, "/tc/");
+    }
+    window.location.href=str;
+  });
+  $('.enlang').click(function(event) {
+    /* Act on the event */
+    var str = window.location.href;
+    if(str.indexOf(/en/)<0){
+      str = str.replace(/\/tc\//, "/en/");
+    }
+    window.location.href=str;
+  });
+  $('.searchimg').on('click', function(){
+    var searchText = $('.search input').val(),
+        str = '/';
+
+  })
+</script>

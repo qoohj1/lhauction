@@ -1,0 +1,89 @@
+  <div class="mid mid2">
+    <div class="bottom">
+      <div class="locate wrap">
+        <span class="content"><?=$navi2?> > <?=$subnavi2?></span>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="menu auction <?=$curLang?>">
+        <div class="nav">
+            <div class="tit" style="width:239px">
+                <a href="<?=$home?>auction"><?=$subnavi1?></a>
+            </div>
+          </div>
+          <div class="nav auction_past">
+            <div class="tit cur" style="width:239px">
+                <a href="<?=$home?>auction_past"><?=$subnavi2?></a>
+            </div>
+          <!-- <div class="sub-nav">
+            <?php if ($curLang === 'tc'): ?>
+              <?php foreach ($auctionCate as $category): ?>
+                  <div class="sub-tit" data-aid="<?php echo $category['id']?>"><a href="<?=$home?>auction_past?aid=<?php echo $category['id']?>"><?php echo $category['name_tc']?></a></div>
+              <?php endforeach; ?>
+            <?php else: ?>
+              <?php foreach ($auctionCate as $category): ?>
+                  <div class="sub-tit" data-aid="<?php echo $category['id']?>"><a href="<?=$home?>auction_past?aid=<?php echo $category['id']?>"><?php echo $category['name_en']?></a></div>
+              <?php endforeach; ?>
+            <?php endif; ?>
+          </div> -->
+        </div>
+      </div>
+      <div class="container2" style="margin-bottom:100px">
+        <?php if ($curLang === 'tc'): ?>
+          <?php foreach ($auctionlist as $auction): ?>
+            <div class="item">
+              <div class="top">
+                <div class="wrap2">
+                  <div class="tit"><?php echo $auction['name_tc']?></div>
+                  <?php if (!empty($auction['pdf'])): ?>
+                    <div class="result"><a target="_blank" href="<?=$auction['pdf']?>">拍賣結果例表</a></div>
+                  <?php endif; ?>
+                  <div class="date"><?php echo date("Y-m-d",$auction['create_time'])?></div>
+                </div>
+              </div>
+              <div class="pics">
+                <div class="wrap2">
+                  <?php foreach ($auction['img'] as $k=>$pic):?>
+                    <div class="img">
+                        <a href="<?=$home?>catalogue?cid=<?=$auction['id']?>">
+                          <img src="<?php echo $pic?>" alt="">
+                        </a>
+                    </div>
+                  <?php if ($k==4): break;?>
+                  <?php endif;?>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php else: ?>
+          <?php foreach ($auctionlist as $auction): ?>
+            <div class="item">
+              <div class="top">
+                <div class="wrap2">
+                  <div class="tit"><?php echo $auction['name_en']?></div>
+                  <?php if (!empty($auction['pdf'])): ?>
+                    <div class="result"><a target="_blank" href="<?=$auction['pdf']?>">拍賣結果例表</a></div>
+                  <?php endif; ?>
+                  <div class="date"><?php echo date("Y-m-d",$auction['create_time'])?></div>
+                </div>
+              </div>
+              <div class="pics">
+                <div class="wrap2">
+                  <?php foreach ($auction['img'] as $k=>$pic):?>
+                    <div class="img">
+                        <a href="<?=$home?>catalogue?cid=<?=$auction['id']?>"><img src="<?php echo $pic?>" alt=""></a>
+                    </div>
+                  <?php if ($k==4): break;?>
+                  <?php endif;?>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      </div>
+    </div>
+
+  </div>
+<script src="<?php echo $resource_url; ?>js/buy.js" charset="utf-8"></script>

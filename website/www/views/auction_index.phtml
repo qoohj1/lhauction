@@ -1,0 +1,41 @@
+  <div class="mid mid2" style="">
+    <div class="bottom">
+      <div class="locate wrap">
+        <span class="content"><?=$navi2?> > <?=$subnavi1?></span>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="menu auction <?=$curLang?>">
+        <div class="nav auction">
+          <div class="tit cur" style="width:239px">
+              <a href="<?=$home?>auction"><?=$subnavi1?></a>
+          </div>
+        </div>
+        <div class="nav auction_past">
+          <div class="tit" style="width:239px">
+              <a href="<?=$home?>auction_past"><?=$subnavi2?></a>
+          </div>
+          <!-- <div class="sub-nav">
+              <?php if ($curLang === 'tc'): ?>
+                <?php foreach ($categorylist as $category): ?>
+                    <div class="sub-tit"><a href="<?=$home?>auction_past?aid=<?php echo $category['id']?>"><?php echo $category['name_tc']?></a></div>
+                <?php endforeach; ?>
+              <?php else: ?>
+                <?php foreach ($categorylist as $category): ?>
+                    <div class="sub-tit"><a href="<?=$home?>auction_past?aid=<?php echo $category['id']?>"><?php echo $category['name_en']?></a></div>
+                <?php endforeach; ?>
+              <?php endif; ?>
+          </div> -->
+        </div>
+      </div>
+      <div class="container2" style="border:0">
+        <?php if ($curLang === 'tc'): ?>
+            <?php echo $newcontent->content_tc; ?>
+          <?php else: ?>
+            <?php echo $newcontent->content_en; ?>
+          <?php endif; ?>
+      </div>
+    </div>
+
+  </div>
+<!-- <script src="<?php echo $resource_url; ?>js/auction.js" charset="utf-8"></script> -->
