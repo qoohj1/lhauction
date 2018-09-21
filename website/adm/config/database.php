@@ -54,10 +54,10 @@ if($_SERVER['HTTP_HOST']=='test.curio.com') {
     $db['default']['password'] = '';
     $db['default']['database'] = 'testcurio';
 } else {
-    $db['default']['hostname'] = '127.0.0.1:3306';
-    $db['default']['username'] = 'root';
+    $db['default']['hostname'] = '';
+    $db['default']['username'] = '';
     $db['default']['password'] = '';
-    $db['default']['database'] = 'curio2';
+    $db['default']['database'] = '';
 }
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
